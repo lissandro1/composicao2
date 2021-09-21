@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Client {
 	
-	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	private String name;
 	private String email;
 	private Date birthDate;
@@ -46,13 +46,10 @@ public class Client {
 	@Override
 	public String toString() {
 		return name
-		+ " "
+		+ " ("
 		+ sdf.format(getBirthDate())
-		+ " - "
+		+ ") - "
 		+ email;
 	}
-	
-	
-	
 
 }
